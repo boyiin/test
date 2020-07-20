@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getting started</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="jumbotron text-center ">
+        <button class="btn btn-danger " onclick="goCocoloco()">
+        Get Cocoloco</button>
+
+        <!-- <button class="btn btn-danger coffee-btn" onclick="goCocoloco()">
+
+        <button class="btn btn-danger coffee-btn" onclick="goCocoloco()"> -->
+
+        <!-- <h2>Hey welcome to my channel</h2> -->
+
+    </div>
+
+    <div class="jumbotron text-center ">
+        <button class="btn btn-danger coffee-btn">
+        Get Coffee</button>
+        
+        <button class="btn btn-danger coffee-btn">
+            Get coffee
+        </button>
+
+        <button class="btn btn-danger coffee-btn">
+            get coffee
+        </button>
+        <!-- <h2>Hey welcome to my channel</h2> -->
+
+    </div>
+
+    <div class="jumbotron text-center">
+        <button class="btn btn-primary lala-btn">
+            not listening
+        </button>
+
+    </div>
+
+    <script>
+       
+    //    const original ="Suliat";
+    //    const clone ='SULIAT';
+
+    //    console.group('string');
+    //    console.log(original == 'SUliat');
+
+       function goCocoloco(){
+           document.body.style.backgroundColor = '#C00C00';
+       }
+       const coffeeButtons = document.querySelectorAll('.coffee-btn');
+    //    coffeeButton.onclick = function() {
+    //        document.body.style.backgroundColor = '#C0FFEE';
+    //    }
+    //    coffeeButton.onmouseenter = goCocoloco;
+
+       function getCoffee() {
+           document.body.style.backgroundColor = '#C0FFEE';       
+       }
+       coffeeButtons.forEach(function(button){
+            button.onclick = getCoffee;
+       });
+
+
+       const lalaButton = document.querySelector('.lala-btn');
+
+       function notListening() {
+           document.body.style.backgroundColor = '#1a1a1a';
+       }
+
+       lalaButton.addEventListener('click', notListening);
+       lalaButton.addEventListener('mouseenter',goCocoloco);
+
+       const buttons = document.querySelectorAll('button');
+       button.forEach(button)
+        
+    </script>
+</body>
+</html>
